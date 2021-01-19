@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="shirustyle.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/ecbdca32e8.js" crossorigin="anonymous"></script>
+  <title>Shiru Cafe</title>
+</head>
+
+<body>
+  <img class="Shiru" src="cup.png">
+  <img class="Cafe" src="cup.png">
+  <div class="Cups">
+    <img class="Cup" id="ans" src="cups.png">
+  </div>
+
+  <!-- <div class="clue">
+    <h1>Congrats on clearing the first clue!!!</h1>
+    <h2>Here's the second:- "    CLUE   "</h2>
+    <h3>GO on....</h3>
+  </div> -->
+  <div class="popup center">
+    <div class="icon">
+      <i class="far fa-check-circle"></i>
+    </div>
+    <div class="title">Congrats!!!</div>
+    <div class="description">Here's the second:- " CLUE "</div>
+    <div class="next-btn">
+      <button id="next-popup-btn">Next</button>
+    </div>
+  </div>
+  <script>
+    document.getElementById("ans").addEventListener("click", function() {
+      document.getElementsByClassName("popup")[0].classList.add("active");
+    });
+
+    document.getElementById("next-popup-btn").addEventListener("click", function() {
+        location.href = "map.html";
+    });
+  </script>
+</body>
+
+</html>

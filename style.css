@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", sans-serif;
+	animation: page-load 350ms ease-in;
+}
+.overview{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Treasure.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+
+button{
+	margin-top: 47%;
+	margin-bottom: 2%;
+	margin-left: 78%;
+	background: transparent;
+	border-radius: 15px;
+	color: #825959;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 70px;
+	overflow: hidden;
+	transition: 0.2s ;
+}
+button:hover{
+	color: #825959;
+	box-shadow: 0 0 10px #825959, 0 0 40px #825959, 0 0 80px #825959;
+}
+
+@keyframes  page-load {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}

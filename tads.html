@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="tadsstyle.css">
+	<title>Tads</title>
+
+</head>
+
+<body>
+	<div class="button">
+		<button id="btn" class="butn" type="button">Enter FullScreen</button>
+		<button id="btn1" class="butn" type="button">Treassure Hunt</button>
+	</div>
+	<!-- <script type="text/javascript">
+		document.getElementById("btn").onclick = function() {
+			var elem = document.documentElement;
+				elem.requestFullscreen();
+			// document.getElementById("btn").css({"opacity":"0"});
+			document.getElementById("btn1").style.opacity = 1;
+			// document.getElementById(id).style.property = new style
+		};
+		document.getElementById("btn1").onclick = function() {
+			location.href = "map.html";
+		};
+	</script> -->
+	<script type="text/javascript">
+
+    function maxWindow() {
+        window.moveTo(0, 0);
+
+        if (document.all) {
+            top.window.resizeTo(screen.availWidth, screen.availHeight);
+        }
+
+        else if (document.layers || document.getElementById) {
+            if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+                top.window.outerHeight = screen.availHeight;
+                top.window.outerWidth = screen.availWidth;
+            }
+        }
+    }
+		window.onload = maxWindow;
+</script>
+</body>
+
+</html>

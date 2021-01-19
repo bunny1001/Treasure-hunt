@@ -1,0 +1,104 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", sans-serif;
+	animation: page-load 350ms ease-in;
+	height: 100vh;
+  overflow: hidden;
+	width: 100%;
+  animation: page-load 350ms ease-in;
+	background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(map.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.OLD{
+	position: absolute;
+	top: 8%;
+	left: 22.5%;
+	width: 2%;
+	z-index: 2;
+}
+.MAIN{
+	position: absolute;
+	top: 74%;
+	left: 47%;
+	width: 2%;
+	z-index: 2;
+}
+.HELIPAD{
+	position: absolute;
+	top: 8.5%;
+	left: 74.5%;
+	width: 2%;
+	z-index: 2;
+}
+.CLOCK{
+	position: absolute;
+	top: 47.5%;
+	left: 49.7%;
+	width: 2%;
+	z-index: 2;
+}
+.CSE{
+	position: absolute;
+	top: 22%;
+	left: 49%;
+	width: 2%;
+	z-index: 2;
+}
+.CAFE{
+	position: absolute;
+	top: 65%;
+	left: 71.2%;
+	width: 2%;
+	z-index: 2;
+}
+h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 4rem;
+	font-weight: 700;
+	pointer-events: none;
+	opacity: 0;
+	letter-spacing: 20px;
+	transition: 0.5s;
+	white-space: nowrap;
+	z-index: 2;
+}
+/* map area:before{
+  content: attr(data-text);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 4rem;
+	font-weight: 700;
+	pointer-events: none;
+	opacity: 0;
+	letter-spacing: 20px;
+	transition: 0.5s;
+	white-space: nowrap;
+	z-index: 2;
+}
+
+
+map area:hover:before{
+	opacity: 1;
+	letter-spacing: 5px;
+} */
+
+@keyframes  page-load {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
